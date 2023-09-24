@@ -4,7 +4,8 @@ import useSound from "use-sound";
 import tip from "./tip.wav";
 
 const data = {
-  letters: "abcdefghijklmnopqrstuvwxyz".split(""),
+  letters: "asdfghjkl".split(""), // Home row only
+  // letters: "abcdefghijklmnopqrstuvwxyz".split(""),
   // numbers: "0123456789".split(""),
   // symbols: "<>;'\"[]{}+=()&%$#@!_-*:.,`?".split("")
 };
@@ -12,23 +13,12 @@ const data = {
 const App = () => {
   let currentLetter = data.letters[Math.floor(Math.random() * data.letters.length)];
 
-
-
   const handleKeyDown = (event) => {
     if (event.key === currentLetter) {
-      console.log("good key pressed");
-
-      currentLetter = data.letters[Math.floor(Math.random() * data.letters.length)];
-      
-
-      console.log(currentLetter);
-
       window.location.reload();
-      
     } else {
       console.log("bad key pressed");
     }
-
   };
 
   const SetRandomBackgroundColor = () => {
