@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import useSound from "use-sound";
-import tip from "./tip.wav";
 import { gsap } from "gsap";
 
 const data = {
@@ -18,7 +16,6 @@ const App = () => {
     if (event.key === currentLetter) {
       window.location.reload();
     } else {
-      console.log("bad key pressed");
       gsap.to(".displayLetter", { rotation: 360, duration: 0.5, ease: "elastic.out(1, 0.3)" });
       gsap.set(".displayLetter", { rotation: 0, duration: 0.5 });
     }
@@ -34,8 +31,6 @@ const App = () => {
     document.body.style.color = "#" + randomColor;
   };
 
-
-
   document.addEventListener("keydown", handleKeyDown);
 
   return (
@@ -46,7 +41,5 @@ const App = () => {
     </div>
   );
 };
-
-
 
 export default App;
