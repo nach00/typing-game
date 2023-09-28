@@ -9,7 +9,7 @@ body {
   font-size: 50rem;
   text-shadow: 0 0 3rem #000;
   height: 100vh;
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
   font-weight: bolder;
   font-family: sans-serif;
 }
