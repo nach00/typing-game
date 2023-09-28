@@ -4,7 +4,8 @@ import { gsap } from "gsap";
 
 const data = {
   // letters: "asdfghjkl".split(""), // Home row only
-  letters: "abcdefghijklmnopqrstuvwxyz".split(""),
+  // letters: "abcdefghijklmnopqrstuvwxyz".split(""),
+  letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""), // Uppercase only
   // letters: "0123456789".split(""),
   // symbols: "<>;'\"[]{}+=()&%$#@!_-*:.,`?".split("")
 };
